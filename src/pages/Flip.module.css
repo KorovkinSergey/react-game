@@ -1,0 +1,42 @@
+.Flip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+.Title {
+    color: #ee6e73;
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+.LevelInfo{
+    font-size: 1.64rem;
+    font-weight: 400;
+}
+.FiledStart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.Result {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.Result > span {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+@media only screen and (max-width: 600px) {
+    .Flip {
+        width: 100%;
+    }
+}

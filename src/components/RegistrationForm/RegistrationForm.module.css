@@ -1,0 +1,38 @@
+.Form {
+    border: 3px solid #cfd8dc;
+    width: 300px;
+    padding: 0 10px 10px;
+    border-radius: 5px;
+    background: white;
+    box-sizing: border-box;
+}
+.Buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+.Button {
+    margin: 0 12px;
+}
+.Tabs {
+    padding: 0 1px;
+}
+.Tab {
+    display: block;
+    margin-bottom: -1px;
+    padding: 12px 15px !important;
+    background: #eee;
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+
+}
+.TabActive {
+    background-color: white !important;
+    outline: none;
+}

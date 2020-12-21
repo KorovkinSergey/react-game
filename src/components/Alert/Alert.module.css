@@ -1,0 +1,16 @@
+.Alert {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin-bottom: 0!important;
+
+}
+.Alert > span {
+    color: #721c24;
+    background-color: #f8d7da;
+    position: relative;
+    padding: .5rem 1.25rem !important;
+    margin-bottom: 1rem;
+    border: 1px solid #f5c6cb;
+    border-radius: .25rem;
+}

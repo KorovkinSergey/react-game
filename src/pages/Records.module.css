@@ -1,0 +1,29 @@
+.Block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 0 10px;
+}
+.Title {
+    color: #ee6e73;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+.Tr > th, td{
+    text-align: center;
+}
+.User {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 300;
+}
+.User > span {
+    font-weight: 400;
+}
+

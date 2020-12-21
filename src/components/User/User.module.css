@@ -1,0 +1,34 @@
+
+.Name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.BlockInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.FlipFlop{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    min-width: 300px;
+    padding: 10px;
+}
+.NameGame{
+    color: #ee6e73;
+    font-weight: 300;
+    font-size: 2.92rem;
+}
+.BestRecord{
+    padding: 10px;
+    font-size: 1rem;
+}
+.BestRecord > ul {
+    margin: 3px;
+}
+.BestRecord > span {
+    border-bottom: 1px solid black;
+}

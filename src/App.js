@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/Navbar/Navbar'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import routes from './routes/routes'
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+	let routesComponents = routes.map((route) => {
+		return <Route path={route.url}
+									component={route.component}
+									exact={route.exact}
+									key={route.url}
+		/>
+
+	})
+
+
+	return (
+		<section className="teal lighten-5" style={{height:'100vh', display:'flex', flexDirection:'column'}}>
+			<BrowserRouter>
+				<Navbar/>
+				<Switch>
+					{routesComponents}
+				</Switch>
+			</BrowserRouter>
+		</section>
+	)
 }
 
-export default App;
+export default App
