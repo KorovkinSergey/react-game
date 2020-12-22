@@ -9,12 +9,17 @@ import {applyMiddleware, compose, createStore} from 'redux'
 import {rootReducer} from './redux/rootReducer'
 import App from './App'
 
+let devTools = window.__REDUX_DEVTOOLS_EXTENSION__ &&
+	window.__REDUX_DEVTOOLS_EXTENSION__();
+
+
+if (process.env.NODE_ENV === 'prod' || process.env.NODE_ENV === 'production') {
+	devTools = a => a;
+}
 
 const store = createStore(rootReducer, compose(
-	applyMiddleware(
-		thunk
-	),
-	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+	applyMiddleware(thunk),
+	devTools
 ))
 
 const app = (
